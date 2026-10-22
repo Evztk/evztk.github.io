@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>evz.tk · Rocket League</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#EEF0FF; --panel:#FFFFFF; --text:#16143A; --muted:#55527F;
+  --blue:#2468F2; --orange:#E8700A; --line:#C9CDF2; --on-accent:#FFFFFF;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#12102B; --panel:#1C1946; --text:#F2F0FF; --muted:#A9A6D6;
+    --blue:#4A86FF; --orange:#FF8A1F; --line:#34307A; --on-accent:#12102B;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#12102B; --panel:#1C1946; --text:#F2F0FF; --muted:#A9A6D6;
+  --blue:#4A86FF; --orange:#FF8A1F; --line:#34307A; --on-accent:#12102B;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{
+  margin:0;min-height:100%;background:var(--bg);color:var(--text);
+  font-family:"Rubik",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:17px;line-height:1.55;
+}
+main{max-width:30rem;margin:0 auto;padding:2.5rem 1.25rem 3rem}
+h1{
+  font-family:"Chakra Petch","Arial Narrow",system-ui,sans-serif;
+  font-weight:700;font-size:clamp(3.4rem,18vw,5.5rem);line-height:1;
+  letter-spacing:-0.02em;margin:0 0 .5rem;
+}
+.lead{margin:0 0 1.75rem;color:var(--muted);max-width:26rem}
+.score{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  background:var(--panel);border:1px solid var(--line);border-radius:.5rem;
+  border-top:6px solid var(--blue);border-bottom:6px solid var(--orange);
+  margin:0 0 2rem;
+}
+.score div{padding:.9rem .5rem;text-align:center}
+.score div+div{border-left:1px solid var(--line)}
+.score dt{font-size:.85rem;color:var(--muted);margin:0}
+.score dd{
+  margin:0;font-family:"Chakra Petch",system-ui,sans-serif;
+  font-weight:700;font-size:1.9rem;line-height:1.2;
+}
+.score{margin-block:0 2rem}
+.note{margin:0 0 1rem;font-weight:500}
+.links{display:grid;gap:.75rem;margin:0;padding:0;list-style:none}
+.links a{
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  min-height:3.5rem;padding:.75rem 1.1rem;border-radius:.5rem;
+  background:var(--panel);color:var(--text);border:2px solid var(--line);
+  text-decoration:none;font-weight:500;
+}
+.links a small{color:var(--muted);font-weight:400;font-size:.9rem}
+.links a:hover{border-color:var(--text)}
+.links a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.links a.main{background:var(--orange);border-color:var(--orange);color:var(--on-accent);font-weight:500}
+.links a.main small{color:inherit;opacity:.85}
+@media (prefers-reduced-motion: no-preference){
+  .links a{transition:border-color .15s}
+}
+</style>
+</head>
+<body>
+<main>
+  <h1>evz.tk</h1>
+  <p class="lead">Rocket League em português. Clipes no TikTok, lives na Twitch.</p>
+
+  <dl class="score" aria-label="Estatísticas de jogo">
+    <div><dt>Rank</dt><dd>GC1</dd></div>
+    <div><dt>MMR máximo</dt><dd>1441</dd></div>
+    <div><dt>Horas</dt><dd>3k</dd></div>
+  </dl>
+
+  <p class="note">Comecei a fazer lives na Twitch. Se gostas dos clipes, aparece lá e deixa um follow.</p>
+
+  <ul class="links">
+    <li><a class="main" href="https://www.twitch.tv/evztk" target="_blank" rel="noopener"><span>Ver as lives na Twitch</span><small>Segue o canal</small></a></li>
+    <li><a href="https://www.tiktok.com/@evz.tk" target="_blank" rel="noopener"><span>Clipes no TikTok</span><small>@evz.tk</small></a></li>
+    <li><a href="https://discord.gg/kwtRyNJxfs" target="_blank" rel="noopener"><span>Entrar no Discord</span><small>Joga connosco</small></a></li>
+  </ul>
+</main>
+</body>
+</html>
